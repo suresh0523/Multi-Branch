@@ -26,7 +26,8 @@ sh '/opt/maven/bin/mvn versions:set -DnewVersion=1.0.3-SNAPSHOT'
   sh 'git add pom.xml'
   sh 'git commit -m "updated pom.xml"'
  sh '/opt/maven/bin/mvn versions:commit'
- sh' git branch: 'dev', credentialsId: 'suresh0523',git push orgin dev'
+ sh' git branch: 'dev', credentialsId: 'suresh0523''
+  sh 'git push -u origin dev'
 }
 }
 }
