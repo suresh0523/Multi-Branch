@@ -19,5 +19,11 @@ steps{
 sh '/opt/maven/bin/mvn -Dmaven.test.failure.ignore clean install'
 }
 }
+    stage('Update Version')
+{
+steps{
+sh '/opt/maven/bin/mvn versions:set -DnewVersion=1.0.3-SNAPSHOT'
+}
+}
 }
 }
