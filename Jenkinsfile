@@ -13,5 +13,11 @@ steps{
 sh '/opt/maven/bin/mvn -Dmaven.test.failure.ignore clean verify'
 }
 }
+  stage('Build')
+{
+steps{
+sh '/opt/maven/bin/mvn -Dmaven.test.failure.ignore clean build'
+}
+}
 }
 }
